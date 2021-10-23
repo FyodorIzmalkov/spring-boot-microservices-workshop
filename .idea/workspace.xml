@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43896a5c-35be-498d-91ff-18e61d451823" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/models/CatalogItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/resources/MovieCatalogResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/example/movieinfoservice/models/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/example/movieinfoservice/resources/MovieResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +37,13 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.movieinfoservice.models" />
+      <recent name="com.example.moviecatalogservice.models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MovieInfoServiceApplication">
     <configuration name="MovieCatalogServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.moviecatalogservice.MovieCatalogServiceApplication" />
       <module name="movie-catalog-service" />
@@ -51,8 +57,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieInfoServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.movieinfoservice.MovieInfoServiceApplication" />
+      <module name="movie-info-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.movieinfoservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MovieInfoServiceApplication" />
         <item itemvalue="Application.MovieCatalogServiceApplication" />
       </list>
     </recent_temporary>
