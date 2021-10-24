@@ -36,7 +36,7 @@ public class MovieCatalogResource {
             ResponseEntity<Movie> movieResponseEntity = restTemplate.getForEntity("http://MOVIE-INFO-SERVICE/movies/" + rating.getMovieId(), Movie.class);
             Movie movie = movieResponseEntity.getBody();
 
-            return new CatalogItem(movie.getName(), "Test desc", rating.getRating());
+            return new CatalogItem(movie.getTitle(), movie.getOverview(), rating.getRating());
         }).collect(Collectors.toList());
     }
 }

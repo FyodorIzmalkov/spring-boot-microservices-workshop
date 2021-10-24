@@ -1,14 +1,10 @@
 package com.example.movieinfoservice.models;
 
-public class Movie {
-    private String movieId;
+public class MovieSummary {
     private String title;
     private String overview;
 
-    public Movie(String movieId, String title, String overview) {
-        this.movieId = movieId;
-        this.title = title;
-        this.overview = overview;
+    public MovieSummary() {
     }
 
     public String getTitle() {
@@ -25,16 +21,5 @@ public class Movie {
 
     public void setOverview(String overview) {
         this.overview = overview;
-    }
-
-    public Movie(){
-    }
-
-    public String getMovieId() {
-        return movieId;
-    }
-
-    public void setMovieId(String movieId) {
-        this.movieId = movieId;
     }
 }
