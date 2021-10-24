@@ -5,6 +5,7 @@ import com.example.moviecatalogservice.models.Movie;
 import com.example.moviecatalogservice.models.Rating;
 import com.example.moviecatalogservice.models.UserRating;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,15 +22,18 @@ public class MovieCatalogResource {
     @Autowired
     private RestTemplate restTemplate;
 
+    @Autowired
+    private DiscoveryClient discoveryClient;
+
     // should actually return wrapper instead of a list
     @RequestMapping("/{userId}")
     public List<CatalogItem> getCatalog(@PathVariable("userId") String userId) {
 
-        UserRating userRating = restTemplate.getForObject("http://localhost:8083/ratingsdata/users/" + userId, UserRating.class);
+        UserRating userRating = restTemplate.getForObject("http://RATINGS-DATA-SERVICE/ratingsdata/users/" + userId, UserRating.class);
         List<Rating> ratings = userRating.getUserRating();
 
         return ratings.stream().map(rating -> {
-            ResponseEntity<Movie> movieResponseEntity = restTemplate.getForEntity("http://localhost:8082/movies/" + rating.getMovieId(), Movie.class);
+            ResponseEntity<Movie> movieResponseEntity = restTemplate.getForEntity("http://MOVIE-INFO-SERVICE/movies/" + rating.getMovieId(), Movie.class);
             Movie movie = movieResponseEntity.getBody();
 
             return new CatalogItem(movie.getName(), "Test desc", rating.getRating());
