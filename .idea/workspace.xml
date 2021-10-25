@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43896a5c-35be-498d-91ff-18e61d451823" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/example/movieinfoservice/models/MovieSummary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/models/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/models/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/resources/MovieCatalogResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/resources/MovieCatalogResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/java/com/example/movieinfoservice/MovieInfoServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/example/movieinfoservice/MovieInfoServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/java/com/example/movieinfoservice/models/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/example/movieinfoservice/models/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/java/com/example/movieinfoservice/resources/MovieResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/example/movieinfoservice/resources/MovieResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/ratingsdataservice/resources/RatingsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/ratingsdataservice/resources/RatingsResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
